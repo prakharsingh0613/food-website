@@ -1,0 +1,11 @@
+.home::before{ 
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 455px;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -2;
+    opacity:0.92;
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body{
+      background-color: rgb(231, 223, 223);
+    }
+    .header{
+      /* padding: 50px; */
+      margin: 50px;
+      /* background-color: rgb(244, 240, 240); */
+    }
+    #content{
+      font-size: 40px ;
+    }
+    #side-bar button{
+      font-size: 2rem;
+      padding: 0;
+      margin: 25px ;
+      color: rgb(6, 6, 6);
+      
+    }
+    #side-bar button:hover{
+      
+      background-color: rgb(226, 150, 175);
+    }
+    .form{
+      width: 85%;
+      border: 6px solid orange;
+    }
+    .btn{
+      color: rgb(32, 8, 54);
+      background-color: rgb(235, 117, 21);
+
+    }
+    .table{
+      
+    }
+    .table tr th{
+      text-align: center;
+    }
+    .table tr td{
+      text-align: center;
+    }
+
+    footer{
+      background-color:black;
+      color: aliceblue;
+    }
+    .buttom{
+      background-color:rgb(240, 240, 240);
+      /* color: aliceblue; */
+    }
+    .up{
+      background-color:rgb(240, 240, 240);
+      /* color: aliceblue; */
+    }
+
+  </style>
+</head>
+<body>
+    
+ <div class="container-fluid">
+   <div class="header"> 
+  <div class="row">
+    <div class="col-md-8" id="content">
+       <img src="3.png" alt="" width="96px"><span><b>Railtire</b> </span>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login </button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><img src="Screenshot (481).png" alt=""></h4>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <!-- <h2>Vertical (basic) form</h2> -->
+                      <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 450px;">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" style="width: 450px;">
+                        </div>
+                        <div class="form-group">
+                          <!-- <input type="file" id="myFile" name="filename">
+                          //<input type="submit"> -->
+                          <!-- <p>Example block-level help text here.</p> -->
+                        </div>
+                        <div class="checkbox">
+                          <!-- <label><input type="checkbox" name="remember"> Check me out</label><br><br> -->
+                          <button type="button" class="btn btn-info"><a href="http://127.0.0.1:5501/pg2.html">Submit</a></button>
+                        </div>
+                      </form>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+              </div>
+            </div> 
+          </div>
+        </div>   
+      <!-- --------------------------------------------------------------- -->
+     
+        
+       <!-- Trigger the modal with a button -->
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign In </button>
+      
+       <!-- Modal -->
+       <div class="modal fade" id="myModal" role="dialog">
+         <div class="modal-dialog">
+         
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               
+             </div>
+             <div class="modal-body">
+                 <div class="container">
+                     <!-- <h2>Vertical (basic) form</h2> -->
+                     <form action="/action_page.php">
+                       <div class="form-group">
+                         <label for="email">Email:</label>
+                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="width: 450px;">
+                       </div>
+                       <div class="form-group">
+                         <label for="pwd">Password:</label>
+                         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" style="width: 450px;">
+                       </div>
+                       <div class="form-group">
+                         <!-- <input type="file" id="myFile" name="filename">
+                         //<input type="submit"> -->
+                         <!-- <p>Example block-level help text here.</p> -->
+                       </div>
+                       <div class="checkbox">
+                         <!-- <label><input type="checkbox" name="remember"> Check me out</label><br><br> -->
+                         <button type="button" class="btn btn-info"><a href="http://127.0.0.1:5501/pg2.html">Submit</a></button>
+                       </div>
+                     </form>
+                   </div>
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+             </div>
+           </div> 
+         </div>
+       </div>    
+          
+       
+      <h1><b>Hungry?</b> </h1>
+      <p>Order food from favourite restaurants near you.</p>
+      
+      <h4 class="popular">POPULAR CITIES IN INDIA</h4>
+
+    <p><b>Ahmedabad  Bangalore Chennai Delhi Gurgaon Hyderabad Kolkata Mumbai Pune & more.</b></p>
+    </div>
+    <div class="col-md-4" id="side-bar">
+      <div class="col-md-6">
+        <img src="idli.jpg" alt="" width="450px">
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-12">
+        <br><br><br>
+        <input type="text" class="form" value="" name="location" id="location" autocomplete="off" tabindex="1" placeholder="Enter your delivery location" maxlength="30"> <span class="glyphicon glyphicon-search"></span>
+        <button class="btn ">FIND FOOD</button>
+        
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<hr>
+
+
+<div class="up">
+<div class="container-fluid">
+<div class="row">
+  
+  <table class="table" >
+   
+    <tr >
+      <th ><img src="nomini.jpg" alt="" ></th>
+      <th><img src="liveorder.jpg" alt=""></th>
+      <th><br><br><br><br><br><br><br><br><br><br><br><img src="fast.jpg" alt=""></th>
+    </tr>
+  
+    <tr class="text-center">
+      <td><h1>No Minimum Order</h1>
+       <p>Order in for yourself or for the group, with no restrictions on order value</p></td>
+      <td><h1>Live Order Tracking</h1>
+      <p>Know where your order is at all times, from the restaurant to your doorstep</p></td>
+      <td><h1>Lightning-Fast Delivery</h1>
+      <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p></td>
+      <hr>
+    </tr>
+  </table>
+  <hr>
+</div>
+</div>
+</div>
+<div class="buttom">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <br><br><br>
+      <h1>Restaurants in your pocket</h1>
+      <p>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
+      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br>
+      <img src="gplay.jpg" alt="" width="140px">
+      <img src="aplay.jpg" alt=""width="140px">
+    </div>
+  
+    <div class="col-md-6">
+      <img src="phonefood.png" alt="" width="100%" height="500px">
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <ul class="pagination">
+    <li><a href="#">1</a></li>
+    <li><a href="http://127.0.0.1:5501/pg2.html#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+    <br><br>
+<footer>
+  <table class="table">
+    <tr>
+      <th>COMPANY</th>
+      
+      <th>CONTACT</th>
+      
+      <th>LEGAL</th>
+      
+      <th><img src="aplay.jpg" alt="" width="130px"><img src="gplay.jpg" alt="" width="130px"></th>
+      
+    
+     
+      
+    </tr>
+
+    <tr>
+      <td><a href="">About us</a></td>
+      <td><a href="">Help & Support</a></td>
+      <td><a href="">Terms & Conditions</a></td>
+    </tr>
+    <tr>
+      <td><a href="">Team</a></td>
+      <td><a href="">Partner with us</a></td>
+      <td><a href="">Refund & Cancellation</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="">Careers</a></td>
+      <td><a href="">Ride with us</a></td>
+      <td><a href="">Privacy Policy</a></td>
+    </tr>
+
+    <tr>
+      <td><a href="">Swiggy Blog</a></td>
+      <td></td>
+      <td><a href="">Cookie Policy</a></td>
+    </tr>
+
+    
+  </table>
+<br>
+  <hr>
+  <div class="container">
+<div class="row">
+  <div class="col-md-4">
+  <img src="3.png" alt="" width="70px">
+  <span><h1>Railtire</h1></span>
+</div>
+  <div class="col-md-4">
+    <br><br><br><br>
+    © 2022 Railtire
+</div>
+  <div class="col-md-4">
+    <br><br><br><br>
+    <a class="_1Az3W" href="https://www.facebook.com/" rel="" alt="facebook" target=""><img class="" width="24" height="24" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"></a>
+
+    <a class="_1Az3W" href="https://in.pinterest.com/" rel="" alt="pintrest" target=""><img class="" width="24" height="24" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"></a>
+
+    <a class="_1Az3W" href="https://www.instagram.com/" rel="" alt="instagram" target=""><img class="" width="24" height="24" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"></a>
+
+    <a class="_1Az3W" href="https://twitter.com/login?lang=en" rel="" alt="twitter" target=""><img class="" width="24" height="24" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"></a>
+</div>
+</div>
+</div>
+</footer>
+<!-- <span role="button" aria-label="Open" class="_2ECk4 _24tlh">Quick View</span> -->
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+  });
+  </script>
+</body>
+</html>
